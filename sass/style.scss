@@ -1,0 +1,320 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    line-height: 1.7;
+    font-size: 16px;
+    font-family: "Roboto", monospace;
+}
+
+.container {
+    width: 1140px;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.logo {
+    font-family: "Merienda";
+    color: gold;
+    font-weight: 300;
+
+}
+
+.navigation {
+    background-color: transparent;
+    padding: 12px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+
+
+}
+
+.navigation ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+}
+
+
+.navigation li {
+    display: inline-block;
+    margin: 0 36px 0 0;
+
+
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navigation a:hover {
+    color: #33d9b2;
+}
+
+.navigation ul ul li {
+    display: block;
+    margin: 0 0 12px 0;
+}
+
+.navigation li ul {
+    display: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-top: 12px;
+}
+
+.navigation li:hover ul {
+    display: block;
+    text-align: center;
+    background: white;
+}
+
+.navigation li ul a {
+    color: #0097e6;
+    display: block;
+    padding: 0 24px;
+}
+
+.navigation li ul a:hover {
+    color: #33d9b2;
+}
+
+.hero {
+
+    position: relative;
+    background-image: url(https://i.postimg.cc/1XBZhDhc/pexels-mikebirdy-114820.jpg);
+    min-height: 750px;
+
+}
+
+.overlay {
+    position: absolute;
+    background-color: #000;
+    height: 100%;
+    opacity: 0.7;
+    width: 100%;
+}
+
+.baner-hero {
+    margin: 8% auto;
+    max-width: 70%;
+    color: #fff;
+    text-align: center;
+
+}
+
+.baner-hero h1 {
+    margin: 0;
+    font-size: 72px;
+    font-weight: 700;
+    word-spacing: 24px;
+    line-height: 1.2;
+
+}
+
+.baner-hero h2 {
+    margin: 24px 0;
+    font-weight: 700;
+    font-size: 36px;
+    font-family: "Merienda";
+}
+
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 50px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: "Roboto", monospace;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid gold;
+    background-color: gold;
+    font-weight: 500;
+    color: #000;
+}
+
+.btn:hover {
+    background-color: inherit;
+    color: #ffffff;
+    border: 2px solid #fff;
+}
+
+.section-title {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+
+
+}
+
+.section-title h2 {
+    font-family: "Merienda";
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.section-content {
+    display: flex;
+    margin: 20px 0;
+}
+
+.servis {
+    flex: 0 0 33.333%;
+    text-align: center;
+    padding: 10px;
+}
+
+.servis span {
+    font-family: "Merienda";
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.servis i {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: incherit;
+    border: 5px solid;
+    color: gold;
+    position: relative;
+    font-size: 40px;
+    padding: 15px;
+}
+
+.portfolio {
+    background-color: #eff2f5;
+    padding: 0 0 60px 0;
+}
+
+.servis img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box {
+    background-color: #fff;
+    margin: 0 10px;
+    width: 300px;
+}
+
+footer ul {
+    font-size: 0;
+    margin: auto;
+    padding: 10px 0;
+
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 10px;
+
+}
+
+.servis ul i {
+    background: #000;
+    color: #fff;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+footer p {
+
+    text-align: center;
+
+}
+
+@media (min-width:320px) and (max-width:767px) {
+
+    .section-title {
+
+        margin: 0;
+        padding: 0 65% 0 0;
+
+
+    }
+
+
+
+    .section-content {
+
+        flex-direction: column;
+
+    }
+
+    .servis {
+        padding: 0 65% 0 0;
+        word-wrap: wrap;
+    }
+
+    footer .servis {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .box {
+        margin: 15px 0 15px 40px;
+    }
+
+    .section-content:nth-last-child(2) {
+        display: none;
+    }
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+    .section-content {
+
+        flex-direction: column;
+
+    }
+
+    .section-title {
+
+        margin: 0 auto;
+        padding: 0 40% 0 0;
+
+
+    }
+
+    footer .servis {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .servis {
+        padding: 0 40% 0 0;
+        margin: 0 auto;
+    }
+
+    .box {
+        margin: 15px 0 15px 60%;
+    }
+
+    .section-content:nth-last-child(2) {
+        display: none;
+    }
+
+}
